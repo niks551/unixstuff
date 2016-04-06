@@ -1,0 +1,10 @@
+
+
+######################################################
+CHANGE THE FILES
+
+######################################################
+for i in ` find /root/test/ -name "*.shp" ` ;
+do
+  mv $i ` echo $i | sed 's/.shp$/_poly.shp/g' ` ;
+done
