@@ -2,7 +2,7 @@
 
 ########
 
-nohup top -l 100 -pid 10001 -stats pid,command,cpu,time | awk 'NR%13==0'
+nohup top -l 100 -pid 10001 -stats pid,command,cpu,time,mem | awk 'NR%13==0'
 
 
 #######
