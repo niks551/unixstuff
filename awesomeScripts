@@ -20,3 +20,6 @@ sudo tcpdump -i eth0 -n -vv>temp
 sudo tcpdump -D
 sudo tcpdump -i -c 1000 -v
 sudo tcpdump -i eth0 -s0
+
+
+netstat -plan|grep java|grep LISTEN
